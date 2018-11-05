@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZZCommentViewController">
+            <connections>
+                <outlet property="bottomSpace" destination="Lke-Dh-0k3" id="Wht-l9-eAi"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BuH-y5-3sw" userLabel="toolBar">
+                    <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ok8-hq-tBh">
+                            <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="44" id="m5f-vF-7fA"/>
+                            </constraints>
+                            <state key="normal" image="comment-bar-voice">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" image="comment-bar-voice-click"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gb9-w9-dhS">
+                            <rect key="frame" x="331" y="0.0" width="44" height="44"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="44" id="yEE-TS-Qp3"/>
+                            </constraints>
+                            <state key="normal" image="comment_bar_at_icon">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" image="comment_bar_at_icon_click"/>
+                        </button>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2uX-Pt-0If">
+                            <rect key="frame" x="44" y="5" width="287" height="34"/>
+                            <animations/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Ok8-hq-tBh" firstAttribute="top" secondItem="BuH-y5-3sw" secondAttribute="top" id="01S-Vm-dMI"/>
+                        <constraint firstItem="2uX-Pt-0If" firstAttribute="top" secondItem="BuH-y5-3sw" secondAttribute="top" constant="5" id="22l-i5-asg"/>
+                        <constraint firstItem="Gb9-w9-dhS" firstAttribute="leading" secondItem="2uX-Pt-0If" secondAttribute="trailing" id="64q-Rz-OQP"/>
+                        <constraint firstAttribute="bottom" secondItem="Ok8-hq-tBh" secondAttribute="bottom" id="EnH-eZ-Lwu"/>
+                        <constraint firstItem="Ok8-hq-tBh" firstAttribute="leading" secondItem="BuH-y5-3sw" secondAttribute="leading" id="JhM-GC-H9h"/>
+                        <constraint firstAttribute="bottom" secondItem="Gb9-w9-dhS" secondAttribute="bottom" id="UxV-EM-QlY"/>
+                        <constraint firstAttribute="height" constant="44" id="Ytp-Z0-lm5"/>
+                        <constraint firstAttribute="trailing" secondItem="Gb9-w9-dhS" secondAttribute="trailing" id="ZhK-rI-t1f"/>
+                        <constraint firstAttribute="bottom" secondItem="2uX-Pt-0If" secondAttribute="bottom" constant="5" id="fi1-RD-9DP"/>
+                        <constraint firstItem="2uX-Pt-0If" firstAttribute="leading" secondItem="Ok8-hq-tBh" secondAttribute="trailing" id="jV4-Zk-CMe"/>
+                        <constraint firstItem="Gb9-w9-dhS" firstAttribute="top" secondItem="BuH-y5-3sw" secondAttribute="top" id="jvi-7S-Ms0"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="hyF-6W-HQV">
+                    <rect key="frame" x="8" y="113" width="337" height="388"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="BuH-y5-3sw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="7rW-ne-88d"/>
+                <constraint firstAttribute="bottom" secondItem="BuH-y5-3sw" secondAttribute="bottom" id="Lke-Dh-0k3"/>
+                <constraint firstAttribute="trailing" secondItem="BuH-y5-3sw" secondAttribute="trailing" id="k9W-Hh-lJB"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="hyF-6W-HQV"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="140.5" y="165.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="comment-bar-voice" width="29" height="29"/>
+        <image name="comment-bar-voice-click" width="29" height="29"/>
+        <image name="comment_bar_at_icon" width="27" height="27"/>
+        <image name="comment_bar_at_icon_click" width="27" height="27"/>
+    </resources>
+</document>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="MT6-b7-pzW" customClass="ZZTopicAudioView">
+            <rect key="frame" x="0.0" y="0.0" width="327" height="377"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YRE-yw-N0f">
+                    <rect key="frame" x="0.0" y="0.0" width="327" height="377"/>
+                    <animations/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="video-play" translatesAutoresizingMaskIntoConstraints="NO" id="JpQ-Xh-Eaj">
+                    <rect key="frame" x="128" y="153" width="71" height="71"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="71" id="Xqq-46-nqb"/>
+                        <constraint firstAttribute="width" constant="71" id="r0Q-UL-bpB"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hYZ-F7-MHr" userLabel="时长">
+                    <rect key="frame" x="285" y="0.0" width="42" height="21"/>
+                    <animations/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="highlightedColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zsk-2v-ETw" userLabel="次数">
+                    <rect key="frame" x="285" y="356" width="42" height="21"/>
+                    <animations/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="highlightedColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                </label>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="YRE-yw-N0f" secondAttribute="trailing" id="1dU-Ar-pvo"/>
+                <constraint firstAttribute="trailing" secondItem="hYZ-F7-MHr" secondAttribute="trailing" id="1dU-fi-RUS"/>
+                <constraint firstItem="hYZ-F7-MHr" firstAttribute="top" secondItem="MT6-b7-pzW" secondAttribute="top" id="21U-zh-v5X"/>
+                <constraint firstAttribute="centerY" secondItem="JpQ-Xh-Eaj" secondAttribute="centerY" id="28Y-Pr-MCE"/>
+                <constraint firstItem="YRE-yw-N0f" firstAttribute="leading" secondItem="MT6-b7-pzW" secondAttribute="leading" id="42a-yv-5oh"/>
+                <constraint firstAttribute="bottom" secondItem="YRE-yw-N0f" secondAttribute="bottom" id="CHQ-sd-7HP"/>
+                <constraint firstAttribute="centerX" secondItem="JpQ-Xh-Eaj" secondAttribute="centerX" id="PcT-Cp-gRB"/>
+                <constraint firstAttribute="bottom" secondItem="zsk-2v-ETw" secondAttribute="bottom" id="X2L-vs-jks"/>
+                <constraint firstAttribute="trailing" secondItem="zsk-2v-ETw" secondAttribute="trailing" id="aaJ-9x-pqO"/>
+                <constraint firstItem="YRE-yw-N0f" firstAttribute="top" secondItem="MT6-b7-pzW" secondAttribute="top" id="fMj-Ix-uI5"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bigIamgeView" destination="YRE-yw-N0f" id="i8h-8B-eGB"/>
+                <outlet property="countLabel" destination="hYZ-F7-MHr" id="Tes-ab-I31"/>
+                <outlet property="timeLabel" destination="zsk-2v-ETw" id="ndR-lQ-kmg"/>
+            </connections>
+            <point key="canvasLocation" x="689.5" y="370.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="video-play" width="71" height="71"/>
+    </resources>
+</document>
